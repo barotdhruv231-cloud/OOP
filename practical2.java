@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CramersRuleSolver {
+class CramersRuleSolver {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
@@ -43,4 +43,5 @@ public class CramersRuleSolver {
         
         input.close();
     }
+
 }
