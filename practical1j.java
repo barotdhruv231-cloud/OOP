@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MetersToFeetConverter {
+class MetersToFeetConverter {
    public static void main(String[] args) {
     final double METERS_TO_FEET = 3.28084;
         
@@ -15,4 +15,5 @@ public class MetersToFeetConverter {
         
         input.close();
     }
+
 }
