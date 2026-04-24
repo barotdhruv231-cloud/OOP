@@ -7,7 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 
-public class Practical52 {
+public class Main {
+
     private static void createAndShowUI() {
         JFrame frame = new JFrame("Practical 52");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,6 +22,8 @@ public class Practical52 {
         for (int i = 1; i <= 5; i++) {
             JLabel label = new JLabel("Text " + i, SwingConstants.CENTER);
             label.setFont(font);
+
+            // Random color + opacity
             label.setForeground(
                 new Color(
                     random.nextInt(256),
@@ -29,6 +32,7 @@ public class Practical52 {
                     80 + random.nextInt(176)
                 )
             );
+
             frame.add(label);
         }
 
@@ -37,6 +41,8 @@ public class Practical52 {
 
     public static void main(String[] args) {
         System.out.println("Dhruv Soni - 240390107005");
-        SwingUtilities.invokeLater(Practical52::createAndShowUI);
+
+        // FIXED: use Main instead of Practical52
+        SwingUtilities.invokeLater(Main::createAndShowUI);
     }
 }
